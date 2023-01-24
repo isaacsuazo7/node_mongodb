@@ -1,0 +1,25 @@
+###
+POST http://localhost:3000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Diego Maradona",
+    "age": 60,
+    "email": "el10@gmail.com"
+}
+
+###
+GET http://localhost:3000/api/users HTTP/1.1
+###
+GET http://localhost:3000/api/users/63cf4317276068ea09186f06 HTTP/1.1
+
+###
+PUT http://localhost:3000/api/users/63cf444ad3094dc72eaab264 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Diego Armando Maradona Ronaldo"
+}
+
+###
+DELETE  http://localhost:3000/api/users/63cf4381276068ea09186f08 HTTP/1.1
